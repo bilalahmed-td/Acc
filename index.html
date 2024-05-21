@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1>Accounting System</h1>
-	<form method="post" action="https://script.google.com/macros/s/AKfycbzXW2kLNNwrzhstswbt9fHG6Aa-OCwDwGpjSfr3Zfm9Yt7cIsVL2YJUkQOKEsg155x0hA/exec"   id="transaction-form">
+	<form method="post" action=""   id="transaction-form" name="transaction-form>
 		<label for="date">Date:</label>
 		<input type="date" id="date" name="date"><br><br>
 		<label for="type">Transaction Type:</label>
@@ -19,10 +19,10 @@
 	</form>
 	<div id="transactions"></div>
 
-	<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-j4xvNl8g8ahcKrc8LUnb0yGt3vWciUJqPUiO7LRdJTW5MV3cowRi016hou3qpMuuSdLHcWhEEfZ8/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+	<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-j4xvNl8g8ahcKrc8LUnb0yGt3vWciUJqPUiO7LRdJTW5MV3cowRi016hou3qpMuuSdLHcWhEEfZ8/pubhtml?widget=true&amp;headers=false"></iframe>
 	<script>
-		const scriptURL = '<SCRIPT URL>'
-		const form = document.forms['submit-to-google-sheet']
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbzXW2kLNNwrzhstswbt9fHG6Aa-OCwDwGpjSfr3Zfm9Yt7cIsVL2YJUkQOKEsg155x0hA/exec'
+		const form = document.forms['transaction-form']
 	  
 		form.addEventListener('submit', e => {
 		  e.preventDefault()
